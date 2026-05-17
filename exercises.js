@@ -21,6 +21,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   // Modify the line of code ABOVE to run a different exercise
 }
 
+function ltc(val) {
+  console.log(val);
+}
+
 function exercise_01() {
   /* 
    
@@ -40,7 +44,17 @@ function exercise_01() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let num = 14;
+  let str = "word";
+  let bool = false;
+  let obj = { name: "Steve", age: 47};
+  let nope;
+  ltc(typeof(num));
+  ltc(typeof(str));
+  ltc(typeof(bool));
+  ltc(typeof(obj));
+  ltc(typeof(nope));
+  
 
   // CODE IN THE OPEN LINES ABOVE
 }
