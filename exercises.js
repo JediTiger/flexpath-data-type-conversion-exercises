@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_03();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -74,7 +74,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let num = 42;
+  ltc(num.toString());
+  ltc(typeof(num.toString()));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -96,8 +98,11 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+  let flag1 = 0;
+  let flag2 = 1;
+  ltc(Boolean(flag1));
+  ltc(Boolean(flag2));
+  
   // CODE IN THE OPEN LINES ABOVE
 }
 
