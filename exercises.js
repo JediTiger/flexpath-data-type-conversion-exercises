@@ -120,7 +120,8 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let someStr = "nope" ;
+  
 
   // CODE IN THE OPEN LINES ABOVE
 }
