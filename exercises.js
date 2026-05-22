@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_03();
+  exercise_10();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -121,6 +121,7 @@ function exercise_04() {
   // CODE IN THE OPEN LINES BELOW
 
   let someStr = "nope" ;
+  ltc(isNaN(someStr));
   
 
   // CODE IN THE OPEN LINES ABOVE
@@ -142,7 +143,8 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let myAge = 900;
+  ltc(`I am ${myAge} years old.`)
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -168,7 +170,10 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let someTxt = name + " has " + number + " apples";
+  ltc(someTxt);
+  someTxt = `${name} has ${number} apples`;
+  ltc(someTxt);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,7 +191,12 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let jsonObj = {
+    text: "text",
+    number: 5
+  }
+  ltc(jsonObj);
+  ltc(JSON.stringify(jsonObj));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -209,7 +219,7 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  ltc(JSON.parse(jsonStringToParse));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -229,7 +239,10 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let someNum = 5.3141579;
+  ltc(Math.round(someNum));
+  ltc(Math.ceil(someNum));
+  ltc(Math.floor(someNum));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -249,7 +262,8 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let someNum = 5.3141579;
+  ltc(someNum.toFixed(2));
 
   // CODE IN THE OPEN LINES ABOVE
 }
