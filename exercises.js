@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_10();
+  exercise_15();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -285,7 +285,10 @@ function exercise_11() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let bigNum = 8534564574.47;
+  let localObj = new Intl.NumberFormat('en-US');
+  let localNum = localObj.format(bigNum);
+  ltc(localNum);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -310,7 +313,9 @@ function exercise_12() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  const salary = 76543;
+  let localObj = new Intl.NumberFormat('en-US', { style: "currency", currency: "USD"});
+  ltc(localObj.format(salary));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -335,7 +340,10 @@ function exercise_13() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  const salary = 823674;
+  let localObj = new Intl.NumberFormat('ja-JP', {style: "currency", currency: "JPY"});
+  let localCur = localObj.format(salary);
+  ltc(localCur);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -355,7 +363,9 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let newDate = new Date();
+  ltc(newDate.toDateString());
+  ltc(newDate.toTimeString());
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -377,7 +387,9 @@ function exercise_15() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let someDate = new Date();
+  ltc(someDate.toLocaleDateString('en-US'));
+  ltc(someDate.toLocaleDateString('en-GB'));
 
   // CODE IN THE OPEN LINES ABOVE
 }
