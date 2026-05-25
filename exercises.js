@@ -501,8 +501,15 @@ function exercise_19() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  todaysDate = new Date();
-  futureDate = new Date(todaysDate);
+  let todaysDate = new Date();
+  let futureDate = new Date(2026, 11, 23);
+  let daysDiff = (futureDate - todaysDate);
+  // 1000 milliseconds = 1 second
+  // 60 seconds = 1 minute
+  // 60 minutes = 1 hr
+  // 24 hours = 1 day
+  // divide
+  ltc(daysDiff / (1000 * 60 * 60 * 24));
 
   // CODE IN THE OPEN LINES ABOVE
 }
