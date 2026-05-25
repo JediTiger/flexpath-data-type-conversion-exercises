@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_17();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -470,6 +470,15 @@ function exercise_18() {
   // CODE IN THE OPEN LINES BELOW
 
   const someNum = 2874863264.19;
+  let japanObj = new Intl.NumberFormat('ja-JP', {style: "currency", currency: "JPY"});
+  let russiaObj = new Intl.NumberFormat('ru-RU', {style: "currency", currency: "RUB"});
+  let usObj = new Intl.NumberFormat('en-US', {style: "currency", currency: "USD"});
+  let japanNum = japanObj.format(someNum);
+  let russiaNum = russiaObj.format(someNum);
+  let usNum = usObj.format(someNum);
+  ltc(japanNum);
+  ltc(russiaNum);
+  ltc(usNum);
 
 
   // CODE IN THE OPEN LINES ABOVE
@@ -492,7 +501,8 @@ function exercise_19() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  todaysDate = new Date();
+  futureDate = new Date(todaysDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
