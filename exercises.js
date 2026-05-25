@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_15();
+  exercise_17();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -407,7 +407,13 @@ function exercise_16() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let badJson = "{ 'some text', 'more text', 'other text', 5 }";
+  try {
+    let parseJson = JSON.parse(badJson);
+  }
+  catch (error) {
+    console.error("Invalid JSON format: ", error.message);
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -424,7 +430,10 @@ function exercise_17() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let someBool = true;
+  let boolText = someBool.toString();
+  ltc(boolText);
+  ltc(typeof boolText);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -460,7 +469,8 @@ function exercise_18() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  const someNum = 2874863264.19;
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
