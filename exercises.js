@@ -508,7 +508,7 @@ function exercise_19() {
   // 60 seconds = 1 minute
   // 60 minutes = 1 hr
   // 24 hours = 1 day
-  // divide
+  // multiple all and then divide by that number
   ltc(daysDiff / (1000 * 60 * 60 * 24));
 
   // CODE IN THE OPEN LINES ABOVE
